@@ -140,8 +140,8 @@ RCT_EXPORT_METHOD(lockToLandscapeLeft)
 #if DEBUG
     NSLog(@"Locked to Landscape Left");
 #endif
-    [Orientation setOrientation:UIInterfaceOrientationMaskLandscapeLeft];
-    [self changeOrientation:UIInterfaceOrientationLandscapeLeft];
+    [Orientation setOrientation:UIInterfaceOrientationMaskLandscapeRight];
+    [self changeOrientation:UIInterfaceOrientationLandscapeRight];
 }
 
 RCT_EXPORT_METHOD(lockToLandscapeRight)
@@ -149,8 +149,8 @@ RCT_EXPORT_METHOD(lockToLandscapeRight)
 #if DEBUG
     NSLog(@"Locked to Landscape Right");
 #endif
-    [Orientation setOrientation:UIInterfaceOrientationMaskLandscapeRight];
-    [self changeOrientation:UIInterfaceOrientationLandscapeRight];
+    [Orientation setOrientation:UIInterfaceOrientationMaskLandscapeLeft];
+    [self changeOrientation:UIInterfaceOrientationLandscapeLeft];
 }
 
 RCT_EXPORT_METHOD(unlockAllOrientations)
